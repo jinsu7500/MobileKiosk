@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--전체 리니어 레이아웃 -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/mainView"
+    android:background="#F5F5DC"
+    >
+    <!--타이틀 바-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/title_logo" />
+
+
+    <!-- 메뉴 카테고리,메뉴상품 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <!-- 카테고리 레이아웃-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 햄버거 버튼-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="햄버거"
+                android:id="@+id/burger"
+                android:background="@drawable/btnstyle"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="음료수"
+                android:id="@+id/drink"
+                android:background="@drawable/btnstyle"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="사이드"
+                android:id="@+id/side"
+                android:background="@drawable/btnstyle"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="디저트"
+                android:id="@+id/dessert"
+                android:background="@drawable/btnstyle"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/burgermenu"
+            android:visibility="visible">
+
+            <!-- 햄버거1행 메뉴-->
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/burger1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:src="@drawable/bicmac" />
+
+                <ImageButton
+                    android:id="@+id/burger2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sanghai"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/burger3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/syusyu"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="빅맥"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상하이"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="슈슈"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <!-- 햄버거2행 메뉴-->
+                <ImageButton
+                    android:id="@+id/burger4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/macchiken"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/burger5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/btl"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/burger6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bulgogi2"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="맥치킨"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="베토디"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="불고기"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <!--햄버거 3행 메뉴-->
+                <ImageButton
+                    android:id="@+id/burger7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/qpc"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/burger8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/chise"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/burger9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/richpotato"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="쿼터파운더치즈"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="치즈버거"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="리치포테이토"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+        <!-- 음료 메뉴-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drinkmenu"
+            android:visibility="gone">
+
+            <!-- 음료1행 메뉴-->
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/drink1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/coke"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/drink2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cyder"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/drink3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fanta"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="콜라"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사이다"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="환타"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+        <!-- 사이드 메뉴-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sidemenu"
+            android:visibility="gone">
+
+            <!-- 음료1행 메뉴-->
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/side1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/chikenlap"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/side2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/beeflap"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/side3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mcnuggets"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="치킨 스낵랩"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비프 스낵랩"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="맥너겟"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/side4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tender"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/side5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cheesestick"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/side6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/applepie"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="치킨 텐더"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="치즈 스틱"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="애플 파이"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- 디저트 메뉴-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dessertmenu"
+            android:visibility="gone">
+
+            <!-- 디저트1행 메뉴-->
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/dessert1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icecream"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/dessert2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/chokosundae"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/dessert3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/oreo"
+                    android:scaleType="fitXY"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이스크림 콘"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선데이 아이스크림"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="맥플러리"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장바구니"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/shoppingList"
+            android:layout_weight="4">
+        </ListView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="주문취소"
+            android:id="@+id/menuCancel"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="구매"
+            android:id="@+id/OKBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="취소"
+            android:id="@+id/cancelBtn"/>
+
+    </LinearLayout>
+</LinearLayout>
